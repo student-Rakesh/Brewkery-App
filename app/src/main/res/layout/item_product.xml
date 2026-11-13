@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/bg_product_card">
+
+    <!-- PRODUCT IMAGE -->
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background"
+        android:background="@drawable/bg_product_image"/>
+
+    <!-- PRODUCT DETAILS -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp">
+
+        <!-- BADGE -->
+        <TextView
+            android:id="@+id/tvBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BESTSELLER"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            android:textColor="#A65B00"
+            android:background="#FFF0C9"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"/>
+
+        <!-- PRODUCT NAME -->
+        <TextView
+            android:id="@+id/tvProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toasted Caramel Macchiato"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#24140E"
+            android:layout_marginTop="3dp"
+            android:maxLines="1"/>
+
+        <!-- RATING -->
+        <TextView
+            android:id="@+id/tvRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⭐ 4.9 (312)"
+            android:textSize="10sp"
+            android:textColor="#99785F"
+            android:layout_marginTop="5dp"/>
+
+        <!-- PRICE AND CUSTOMIZE -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="$4.85"
+                android:textSize="12sp"
+                android:textColor="#E94326"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnCustomize"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:text="+ Customize"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/bg_customize"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
